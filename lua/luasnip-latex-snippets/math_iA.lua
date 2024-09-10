@@ -161,10 +161,14 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "DD", name = "D" }, "\\mathbb{D}"),
     parse_snippet({ trig = "HH", name = "H" }, "\\mathbb{H}"),
     parse_snippet({ trig = "lll", name = "l" }, "\\ell"),
+    parse_snippet({ trig = "PP", name = "power set" }, "\\mathcal{P}($1) $0"),
     parse_snippet(
       { trig = "dint", name = "integral", priority = 300 },
       "\\int_{${1:-\\infty}}^{${2:\\infty}} ${3:${TM_SELECTED_TEXT}} $0"
     ),
+
+    parse_snippet({ trig = "nrel", name = "does not relates" }, "\\not \\mathrel{R}"),
+    parse_snippet({ trig = "rel", name = "relates" }, "\\mathrel{R}"),
 
     parse_snippet({ trig = "==", name = "equals" }, [[&= $1 \\\\]]),
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
