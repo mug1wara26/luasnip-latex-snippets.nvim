@@ -19,7 +19,7 @@ function M.retrieve(is_math)
     with_priority({ trig = "arcsin", name = "arcsin" }, "\\arcsin "),
     with_priority({ trig = "arctan", name = "arctan" }, "\\arctan "),
     with_priority({ trig = "arcsec", name = "arcsec" }, "\\arcsec "),
-    with_priority({ trig = "asin", name = "asin" }, "\\sin{-1}"),
+    with_priority({ trig = "asin", name = "asin" }, "\\sin^{-1}"),
     with_priority({ trig = "acos", name = "acos" }, "\\cos^{-1}"),
     with_priority({ trig = "atan", name = "atan" }, "\\tan^{-1}"),
     with_priority({ trig = "asec", name = "asec" }, "\\sec{^-1}"),
