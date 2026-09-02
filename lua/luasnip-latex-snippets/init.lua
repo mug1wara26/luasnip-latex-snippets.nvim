@@ -2,7 +2,7 @@ local M = {}
 
 local default_opts = {
   use_treesitter = false,
-  allow_on_markdown = true,
+  allow_on_markdown = false,
 }
 
 M.setup = function(opts)

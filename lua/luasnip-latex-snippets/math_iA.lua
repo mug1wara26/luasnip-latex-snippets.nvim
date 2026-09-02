@@ -166,6 +166,7 @@ function M.retrieve(is_math)
       { trig = "dint", name = "integral", priority = 300 },
       "\\int_{${1:-\\infty}}^{${2:\\infty}} ${3:${TM_SELECTED_TEXT}} $0"
     ),
+    parse_snippet({ trig = "veps", name = "varepsilon" }, "\\varepsilon"),
 
     parse_snippet({ trig = "nrel", name = "does not relates" }, "\\not \\mathrel{R}"),
     parse_snippet({ trig = "rel", name = "relates" }, "\\mathrel{R}"),
@@ -174,7 +175,7 @@ function M.retrieve(is_math)
     parse_snippet({ trig = "!=", name = "not equals" }, "\\neq "),
     parse_snippet({ trig = "compl", name = "complement" }, "^{c}"),
     parse_snippet({ trig = "__", name = "subscript" }, "_{$1}$0"),
-    parse_snippet({ trig = "=>", name = "implies" }, "\\implies"),
+    parse_snippet({ trig = "=>", name = "implies" }, "\\implies "),
     parse_snippet({ trig = "simp", name = "short implies" }, "\\Rightarrow"),
     parse_snippet({ trig = "=<", name = "implied by" }, "\\impliedby"),
     parse_snippet({ trig = "<<", name = "<<" }, "\\ll"),
