@@ -21,6 +21,7 @@ function M.retrieve(is_math)
 
     parse_snippet({ trig = "lim", name = "limit" }, "\\lim_{${1:n} \\to ${2:\\infty}} "),
     parse_snippet({ trig = "limsup", name = "limsup" }, "\\limsup_{${1:n} \\to ${2:\\infty}} "),
+    parse_snippet({ trig = "limin", name = "liminf" }, "\\liminf_{${1:n} \\to ${2:\\infty}} "),
 
     parse_snippet(
       { trig = "prod", name = "product" },
